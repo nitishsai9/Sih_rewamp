@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3> Give Away login </h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+    <br/>
+    <button onclick="loging()">Signin With Google</button>
+  </div>
+
+  <div id="register_div" class="main-div">
+    <h3> Give Away Register </h3>
+    <input type="email" placeholder="Email..." id="reg_email" />
+    <input type="password" placeholder="Password..." id=  "reg_pass" />
+
+    <button onclick="register()">Register</button>
+  </div>
+  <div id="forget_div" class="main-div">
+    <h3> Give Away Forgotten Password </h3>
+    <input type="email" placeholder="Email..." id="forget_email" />
+
+    <button onclick="forgetPass()">Reset Password</button>
+  </div>
+
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+  </br>
+    <p id="user_para"> You're currently logged in.</p>
+    </br>
+    <button onclick="blog()">I Want to Contribute</button>
+  </br>
+  </br>
+    <button onclick="blog()">I Want to Post</button>
+  </br>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyC4ajwhyjTwq78egp2xNdMGUps6WY-jFNY",
+    authDomain: "mini-proj-bb5ad.firebaseapp.com",
+    databaseURL: "https://mini-proj-bb5ad.firebaseio.com",
+    projectId: "mini-proj-bb5ad",
+    storageBucket: "mini-proj-bb5ad.appspot.com",
+    messagingSenderId: "654797840273",
+    appId: "1:654797840273:web:60642b5f95f9f5aea44430",
+    measurementId: "G-7W4H6SJ32K"
+
+    };
+    firebase.initializeApp(config);
+  </script>
+
+ 
+
+<script src="index.js"></script>
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c7a862e3341d22d9ce6f77e/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+</body>
+</html>
